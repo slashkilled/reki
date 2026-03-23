@@ -22,6 +22,7 @@ body{
 
 .container{
   max-width:900px;
+  position:relative;
 }
 
 h1{
@@ -35,7 +36,6 @@ p{
   font-size:18px;
 }
 
-/* ФОТО В РЯД */
 .images{
   display:flex;
   justify-content:center;
@@ -49,7 +49,7 @@ p{
   border-radius:6px;
 }
 
-/* КНОПКА */
+/* Кнопка */
 .start{
   display:inline-block;
   margin-top:30px;
@@ -71,7 +71,15 @@ p{
   background:#1a1a1a;
 }
 
-/* АДАПТИВ */
+/* QR-код */
+.qr{
+  position:absolute;
+  bottom:15px;
+  right:15px;
+  width:90px;
+  height:90px;
+}
+
 @media(max-width:768px){
   h1{font-size:45px;}
   p{font-size:16px;}
@@ -87,6 +95,14 @@ p{
   .start{
     padding:20px 50px;
     font-size:24px;
+  }
+
+  .qr{
+    bottom:120px;
+    right:50%;
+    transform:translateX(50%);
+    width:70px;
+    height:70px;
   }
 }
 </style>
@@ -106,6 +122,11 @@ p{
   </div>
 
   <a href="slide1.html" class="start">В плаванье</a>
+
+  <!-- QR код -->
+  <a href="https://slashkilled.github.io/reki/" target="_blank">
+    <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://slashkilled.github.io/reki/">
+  </a>
 </div>
 </body>
 </html>
