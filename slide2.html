@@ -12,11 +12,16 @@ body{margin:0;background:#0a0a0a;color:#eaeaea;font-family:'Roboto Mono', monosp
 .text h1{font-size:50px;}
 .text p{color:#ccc;}
 .images{flex:1;position:relative;}
-.images img{position:absolute;width:55%;border-radius:6px;}
+.images img{position:absolute;width:85%;border-radius:6px;} 
 .top{top:0;left:0;}
 .bottom{bottom:0;right:0;}
-.arrow{position:absolute;top:50%;right:5%;font-size:50px;color:#888;text-decoration:none;}
+.arrow{position:absolute;top:50%;right:3%;font-size:70px;color:#888;text-decoration:none;}
 .arrow:hover{color:#fff;}
+@media(max-width:768px){
+.container{flex-direction:column;}
+.images img{position:relative;width:90%;margin:10px auto;}
+.arrow{font-size:50px;top:unset;bottom:10px;right:50%;transform:translateX(50%);}
+}
 </style>
 </head>
 <body>
