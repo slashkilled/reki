@@ -9,18 +9,19 @@
 body{margin:0;background:#0a0a0a;color:#eaeaea;font-family:'Roboto Mono', monospace;}
 .container{display:flex;height:100vh;}
 .text{flex:1;padding:60px;display:flex;flex-direction:column;justify-content:center;}
-.text h1{font-size:50px;}
-.text p{color:#ccc;}
+.text h1{font-size:55px;margin-bottom:30px;}
+.text p{color:#ccc;font-size:22px;font-weight:700;line-height:1.7;margin-bottom:20px;}
 .images{flex:1;position:relative;}
-.images img{position:absolute;width:85%;border-radius:6px;} /* увеличили фотки */
+.images img{position:absolute;width:80%;border-radius:6px;}
 .top{top:0;left:0;}
 .bottom{bottom:0;right:0;}
-.arrow{position:absolute;top:50%;right:3%;font-size:70px;color:#888;text-decoration:none;} /* увеличили стрелку */
+.arrow{position:absolute;top:50%;right:3%;font-size:70px;color:#888;text-decoration:none;}
 .arrow:hover{color:#fff;}
 @media(max-width:768px){
 .container{flex-direction:column;}
 .images img{position:relative;width:90%;margin:10px auto;}
 .arrow{font-size:50px;top:unset;bottom:10px;right:50%;transform:translateX(50%);}
+.text p{font-size:18px;}
 }
 </style>
 </head>
@@ -28,9 +29,9 @@ body{margin:0;background:#0a0a0a;color:#eaeaea;font-family:'Roboto Mono', monosp
 <div class="container">
 <div class="text">
 <h1>Мёртвое море</h1>
-<p>Мёртвое море — одно из самых солёных водоёмов в мире, расположенное между Израилем и Иорданией.</p>
-<p>Оно образовалось миллионы лет назад в тектонической впадине, куда поступает вода, но не вытекает.</p>
-<p>Сегодня море уменьшается, но остаётся важным природным объектом.</p>
+<p>Мёртвое море — одно из самых солёных водоёмов в мире, расположенное между Израилем и Иорданией. Его солёность примерно в десять раз выше, чем у обычного океана, поэтому люди могут плавать, не погружаясь полностью.</p>
+<p>Море образовалось миллионы лет назад в тектонической впадине, куда поступает вода, но не вытекает. Соли и минералы накапливаются, делая воду уникальной и полезной для кожи и здоровья.</p>
+<p>Сегодня Мёртвое море постепенно уменьшается из-за изменения климата и деятельности человека, но остаётся популярным туристическим местом. Люди со всего мира приезжают сюда, чтобы испытать плавучесть и целебные свойства воды.</p>
 </div>
 <div class="images">
 <img src="https://lifeglobe.net/x/entry/3435/1.jpg" class="top">
