@@ -20,9 +20,22 @@ body{
 .container{max-width:900px;}
 h1{font-size:65px;margin-bottom:20px;}
 p{color:#ccc;line-height:1.6;font-size:18px;}
+
+.images{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-top:20px;
+  align-items:center;
+}
+.images img{
+  width:300px;
+  border-radius:6px;
+}
+
 .start{
   display:inline-block;
-  margin-top:40px;
+  margin-top:30px;
   padding:25px 70px;
   font-size:28px;
   border:2px solid #888;
@@ -30,19 +43,27 @@ p{color:#ccc;line-height:1.6;font-size:18px;}
   color:#eaeaea;
 }
 .start:hover{border-color:#fff;}
+
 @media(max-width:768px){
   h1{font-size:45px;}
   p{font-size:16px;}
+  .images img{width:90%;}
 }
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>&lt;Hello World&gt;</h1>
+  <h1>Привет!</h1>
   <p>Сегодня я расскажу о трёх необычных морях: Мёртвом, Каспийском и Аральском.</p>
   <p>Вы узнаете, как они образовались и что с ними происходило со временем.</p>
-  <p>Каждое из этих морей имеет свою уникальную историю.</p>
-  <a href="slide1.html" class="start">Начать</a>
+
+  <div class="images">
+    <img src="https://madan.org.il/sites/default/files/field/image/bolan1.jpg">
+    <img src="https://casp-geo.ru/wp-content/uploads/2019/06/250619-1-1024x684.jpg">
+    <img src="https://gde.kg/uploads/posts/2025-02/aral.jpg">
+  </div>
+
+  <a href="slide1.html" class="start">В плаванье</a>
 </div>
 </body>
 </html>
