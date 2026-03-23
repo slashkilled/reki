@@ -11,16 +11,16 @@ body{margin:0;background:#0a0a0a;color:#eaeaea;font-family:'Roboto Mono', monosp
 .text{flex:1;padding:60px;display:flex;flex-direction:column;justify-content:center;}
 .text h1{font-size:55px;margin-bottom:30px;}
 .text p{color:#ccc;font-size:22px;font-weight:700;line-height:1.7;margin-bottom:20px;}
-.images{flex:1;position:relative;}
-.images img{position:absolute;width:80%;border-radius:6px;}
-.top{top:0;left:0;}
-.bottom{bottom:0;right:0;}
-.arrow{position:absolute;top:50%;right:3%;font-size:70px;color:#888;text-decoration:none;}
+.images{flex:1;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;position:relative;}
+.images img{width:48%;border-radius:6px;}
+.arrow{position:absolute;top:50%;right:3%;font-size:70px;color:#888;text-decoration:none;z-index:2;}
 .arrow:hover{color:#fff;}
 @media(max-width:768px){
 .container{flex-direction:column;}
-.images img{position:relative;width:90%;margin:10px auto;}
-.arrow{font-size:50px;top:unset;bottom:10px;right:50%;transform:translateX(50%);}
+.images{flex-direction:row;justify-content:center;align-items:center;margin-top:20px;}
+.images img{width:45%;margin:5px;}
+.arrow{font-size:90px;top:unset;bottom:10px;right:50%;transform:translateX(50%);}
+.text h1{font-size:40px;}
 .text p{font-size:18px;}
 }
 </style>
@@ -34,8 +34,8 @@ body{margin:0;background:#0a0a0a;color:#eaeaea;font-family:'Roboto Mono', monosp
 <p>Сегодня Мёртвое море постепенно уменьшается из-за изменения климата и деятельности человека, но остаётся популярным туристическим местом. Люди со всего мира приезжают сюда, чтобы испытать плавучесть и целебные свойства воды.</p>
 </div>
 <div class="images">
-<img src="https://lifeglobe.net/x/entry/3435/1.jpg" class="top">
-<img src="https://cs12.pikabu.ru/post_img/big/2022/01/27/6/1643272187130097489.jpg" class="bottom">
+<img src="https://lifeglobe.net/x/entry/3435/1.jpg" alt="">
+<img src="https://cs12.pikabu.ru/post_img/big/2022/01/27/6/1643272187130097489.jpg" alt="">
 <a href="slide2.html" class="arrow">→</a>
 </div>
 </div>
