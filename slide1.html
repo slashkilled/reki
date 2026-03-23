@@ -7,19 +7,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#0a0a0a;color:#eaeaea;font-family:'Roboto Mono', monospace;}
-.container{display:flex;height:100vh;}
-.text{flex:1;padding:60px;display:flex;flex-direction:column;justify-content:center;}
+.container{display:flex;flex-wrap:wrap;min-height:100vh;padding:20px;}
+.text{flex:1;min-width:300px;padding:20px;display:flex;flex-direction:column;justify-content:center;}
 .text h1{font-size:55px;margin-bottom:30px;}
 .text p{color:#ccc;font-size:22px;font-weight:700;line-height:1.7;margin-bottom:20px;}
-.images{flex:1;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;position:relative;}
-.images img{width:48%;border-radius:6px;}
-.arrow{position:absolute;top:50%;right:3%;font-size:70px;color:#888;text-decoration:none;z-index:2;}
+.images{flex:1;min-width:300px;padding:20px;display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-end;}
+.images img{width:48%;border-radius:6px;margin-bottom:15px;}
+.arrow{display:block;margin-top:20px;font-size:60px;color:#888;text-decoration:none;text-align:center;}
 .arrow:hover{color:#fff;}
 @media(max-width:768px){
 .container{flex-direction:column;}
-.images{flex-direction:row;justify-content:center;align-items:center;margin-top:20px;}
+.images{flex-direction:row;justify-content:center;align-items:center;margin-top:20px;flex-wrap:wrap;}
 .images img{width:45%;margin:5px;}
-.arrow{font-size:90px;top:unset;bottom:10px;right:50%;transform:translateX(50%);}
+.arrow{font-size:90px;}
 .text h1{font-size:40px;}
 .text p{font-size:18px;}
 }
@@ -31,7 +31,7 @@ body{margin:0;background:#0a0a0a;color:#eaeaea;font-family:'Roboto Mono', monosp
 <h1>Мёртвое море</h1>
 <p>Мёртвое море — одно из самых солёных водоёмов в мире, расположенное между Израилем и Иорданией. Его солёность примерно в десять раз выше, чем у обычного океана, поэтому люди могут плавать, не погружаясь полностью.</p>
 <p>Море образовалось миллионы лет назад в тектонической впадине, куда поступает вода, но не вытекает. Соли и минералы накапливаются, делая воду уникальной и полезной для кожи и здоровья.</p>
-<p>Сегодня Мёртвое море постепенно уменьшается из-за изменения климата и деятельности человека, но остаётся популярным туристическим местом. Люди со всего мира приезжают сюда, чтобы испытать плавучесть и целебные свойства воды.</p>
+<p>Сегодня Мёртвое море постепенно уменьшается из-за изменения климата и деятельности человека, но остаётся популярным туристическим местом.</p>
 </div>
 <div class="images">
 <img src="https://lifeglobe.net/x/entry/3435/1.jpg" alt="">
