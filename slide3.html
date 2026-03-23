@@ -11,16 +11,16 @@ body{margin:0;background:#0a0a0a;color:#eaeaea;font-family:'Roboto Mono', monosp
 .text{flex:1;padding:60px;display:flex;flex-direction:column;justify-content:center;}
 .text h1{font-size:55px;margin-bottom:30px;}
 .text p{color:#ccc;font-size:22px;font-weight:700;line-height:1.7;margin-bottom:20px;}
-.images{flex:1;position:relative;}
-.images img{position:absolute;width:80%;border-radius:6px;}
-.top{top:0;left:0;}
-.bottom{bottom:0;right:0;}
-.arrow{position:absolute;top:50%;right:3%;font-size:70px;color:#888;text-decoration:none;}
+.images{flex:1;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;position:relative;}
+.images img{width:48%;border-radius:6px;}
+.arrow{position:absolute;top:50%;right:3%;font-size:70px;color:#888;text-decoration:none;z-index:2;}
 .arrow:hover{color:#fff;}
 @media(max-width:768px){
 .container{flex-direction:column;}
-.images img{position:relative;width:90%;margin:10px auto;}
-.arrow{font-size:50px;top:unset;bottom:10px;right:50%;transform:translateX(50%);}
+.images{flex-direction:row;justify-content:center;align-items:center;margin-top:20px;}
+.images img{width:45%;margin:5px;}
+.arrow{font-size:90px;top:unset;bottom:10px;right:50%;transform:translateX(50%);}
+.text h1{font-size:40px;}
 .text p{font-size:18px;}
 }
 </style>
@@ -34,49 +34,8 @@ body{margin:0;background:#0a0a0a;color:#eaeaea;font-family:'Roboto Mono', monosp
 <p>Сегодня Аральское море почти полностью исчезло. Этот процесс считается одной из крупнейших экологических катастроф современности, но остаётся объектом изучения учёных.</p>
 </div>
 <div class="images">
-<img src="https://carawan-net.org/wp-content/uploads/2022/03/ajerosjomka-malogo-aralskogo-morja.jpg" class="top">
-<img src="https://ulysmedia.kz/cache/imagine/1200/uploads/news/2026/02/11/698c6e83e5269562065851.jpg" class="bottom">
-<a href="slide4.html" class="arrow">→</a>
-</div>
-</div>
-</body>
-</html><!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<title>Аральское море</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:#0a0a0a;color:#eaeaea;font-family:'Roboto Mono', monospace;}
-.container{display:flex;height:100vh;}
-.text{flex:1;padding:60px;display:flex;flex-direction:column;justify-content:center;}
-.text h1{font-size:50px;}
-.text p{color:#ccc;}
-.images{flex:1;position:relative;}
-.images img{position:absolute;width:85%;border-radius:6px;} 
-.top{top:0;left:0;}
-.bottom{bottom:0;right:0;}
-.arrow{position:absolute;top:50%;right:3%;font-size:70px;color:#888;text-decoration:none;}
-.arrow:hover{color:#fff;}
-@media(max-width:768px){
-.container{flex-direction:column;}
-.images img{position:relative;width:90%;margin:10px auto;}
-.arrow{font-size:50px;top:unset;bottom:10px;right:50%;transform:translateX(50%);}
-}
-</style>
-</head>
-<body>
-<div class="container">
-<div class="text">
-<h1>Аральское море</h1>
-<p>Аральское море раньше было одним из крупнейших озёр в мире.</p>
-<p>Оно образовалось благодаря рекам, но позже вода была использована для сельского хозяйства.</p>
-<p>В результате море почти полностью высохло.</p>
-</div>
-<div class="images">
-<img src="https://carawan-net.org/wp-content/uploads/2022/03/ajerosjomka-malogo-aralskogo-morja.jpg" class="top">
-<img src="https://ulysmedia.kz/cache/imagine/1200/uploads/news/2026/02/11/698c6e83e5269562065851.jpg" class="bottom">
+<img src="https://carawan-net.org/wp-content/uploads/2022/03/ajerosjomka-malogo-aralskogo-morja.jpg" alt="">
+<img src="https://ulysmedia.kz/cache/imagine/1200/uploads/news/2026/02/11/698c6e83e5269562065851.jpg" alt="">
 <a href="slide4.html" class="arrow">→</a>
 </div>
 </div>
