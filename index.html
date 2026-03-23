@@ -24,34 +24,32 @@ body{
   max-width:900px;
 }
 
-/* Заголовок */
 h1{
   font-size:65px;
   margin-bottom:20px;
 }
 
-/* Текст */
 p{
   color:#ccc;
   line-height:1.6;
   font-size:18px;
 }
 
-/* Картинки */
+/* ФОТО В РЯД */
 .images{
   display:flex;
-  flex-direction:column;
+  justify-content:center;
   gap:15px;
-  margin-top:20px;
-  align-items:center;
+  margin-top:25px;
+  flex-wrap:wrap;
 }
 
 .images img{
-  width:280px;
+  width:260px;
   border-radius:6px;
 }
 
-/* КНОПКА С ВОЛНОЙ */
+/* КНОПКА */
 .start{
   display:inline-block;
   margin-top:30px;
@@ -62,7 +60,6 @@ p{
   background:#111;
   border:2px solid #888;
 
-  /* волнистая форма */
   border-radius: 60% 40% 60% 40% / 40% 60% 40% 60%;
 
   transition:0.3s;
@@ -78,6 +75,10 @@ p{
 @media(max-width:768px){
   h1{font-size:45px;}
   p{font-size:16px;}
+
+  .images{
+    flex-direction:column;
+  }
 
   .images img{
     width:90%;
