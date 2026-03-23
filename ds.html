@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dead Sea</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0a0a0a;color:#eaeaea;font-family:'Roboto Mono', monospace;}
+.container{display:flex;height:100vh;}
+.text{flex:1;padding:60px;display:flex;flex-direction:column;justify-content:center;}
+.text h1{font-size:50px;}
+.text p{color:#ccc;line-height:1.6;}
+.images{flex:1;position:relative;}
+.images img{position:absolute;width:60%;border-radius:6px;}
+.top{top:0;left:0;}
+.bottom{bottom:0;right:0;}
+.arrow{position:absolute;top:50%;right:5%;font-size:50px;text-decoration:none;color:#888;}
+.arrow:hover{color:#fff;}
+@media(max-width:768px){
+.container{flex-direction:column;}
+.images img{position:relative;width:80%;margin:10px auto;}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="text">
+<h1>Dead Sea</h1>
+<p>The Dead Sea is one of the most unique bodies of water in the world. It is located between Israel and Jordan and is famous for its high salt level.</p>
+<p>It was formed millions of years ago as part of a large geological valley. Water flows into it, but it does not flow out, so salt stays inside.</p>
+<p>Today, the Dead Sea is shrinking because of human activity. However, it is still a popular place for tourists.</p>
+</div>
+<div class="images">
+<img src="https://via.placeholder.com/500" class="top">
+<img src="https://via.placeholder.com/500" class="bottom">
+<a href="slide2.html" class="arrow">→</a>
+</div>
+</div>
+</body>
+</html>
